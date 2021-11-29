@@ -7,6 +7,10 @@ An intentionally convulated movie finding app built using the TMDB API to play a
 - [Go 1.17](https://golang.org/)
 - [Protocol buffer compiler](https://grpc.io/docs/protoc-installation/)
 
+## Configuration
+
+This app uses [configo](https://github.com/affanshahid/configo) for configurations.Configure different parameters including the required `tmdb_api_key` using the config folder or environment variables.
+
 ## Running
 
 ```sh
