@@ -1,0 +1,3 @@
+tmdb_api_key: <API_KEY>
+etcd_url: droplet01:2379
+grpc_port: 50051

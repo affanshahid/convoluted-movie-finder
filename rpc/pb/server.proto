@@ -1,0 +1,37 @@
+syntax = "proto3";
+package movie;
+
+option go_package = "github.com/affanshahid/convoluted-movie-finder/rpc/pb";
+
+import "google/protobuf/timestamp.proto";
+
+service Movie {
+  rpc FetchGenrePeriodDetails (GenrePeriodDetailsRequest) returns (GenrePeriodDetailsReply) {}
+}
+
+message GenrePeriodDetailsRequest {
+  int64 genreId = 1;
+	google.protobuf.Timestamp startDate = 2;
+	google.protobuf.Timestamp endDate = 3;
+	int64 revenue = 4;
+  enum Operator {
+    OP_LT = 0;
+    OP_EQ = 1;
+    OP_GT = 2;
+  }
+  Operator revenueCheckOperator = 5;
+}
+
+message GenrePeriodDetailsReply {
+  int64 genreId = 1;
+  string name = 2;
+  float pct = 3;
+  repeated MovieMsg movies = 4;
+}
+
+message MovieMsg {
+  int64 id = 1;
+  string title = 2;
+  string releaseDate = 3;
+  int64 revenue = 4;
+}

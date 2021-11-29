@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "go.testEnvVars": {
+        "APP_ENV": "test"
+    }
+}
