@@ -9,7 +9,7 @@ An intentionally convulated movie finding app built using the TMDB API to play a
 
 ## Configuration
 
-This app uses [configo](https://github.com/affanshahid/configo) for configurations.Configure different parameters including the required `tmdb_api_key` using the config folder or environment variables.
+This app uses [configo](https://github.com/affanshahid/configo) for configurations. Configure different parameters including the required `tmdb_api_key` using the config folder or environment variables.
 
 ## Running
 
